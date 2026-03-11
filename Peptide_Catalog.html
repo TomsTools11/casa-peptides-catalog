@@ -22,6 +22,7 @@
   --color-accent: #d4ba99;
   --color-accent-hover: #c5a882;
   --color-accent-bg: rgba(212,186,153,0.15);
+  --color-on-accent: #3d2e1e;
   --color-success: #5a8a5e;
   --color-warning: #c47a2a;
   --color-error: #c44e49;
@@ -235,7 +236,7 @@ body {
 }
 .tab-pill.active {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-on-accent);
   border-color: var(--color-accent);
 }
 
@@ -308,7 +309,7 @@ body {
 }
 .view-toggle button.active {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-on-accent);
 }
 
 /* ── Main Container ── */
@@ -403,7 +404,7 @@ body {
 /* ── Compare Checkbox (top-RIGHT) ── */
 .compare-checkbox {
   position: absolute;
-  top: 0.75rem;
+  bottom: 0.85rem;
   right: 0.75rem;
   z-index: 2;
 }
@@ -584,7 +585,7 @@ tr[data-cat] { cursor: pointer; }
 }
 .size-pill.active {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-on-accent);
   border-color: var(--color-accent);
 }
 
@@ -622,7 +623,7 @@ tr[data-cat] { cursor: pointer; }
 /* Compare Add Button */
 .btn-compare-add {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-on-accent);
   border: none;
   border-radius: var(--radius-md);
   padding: 0.6rem 1.25rem;
@@ -790,7 +791,7 @@ tr[data-cat] { cursor: pointer; }
 }
 .compare-bar .btn {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-on-accent);
   border: none;
   border-radius: var(--radius-pill);
   padding: 0.5rem 1.25rem;
@@ -832,7 +833,7 @@ tr[data-cat] { cursor: pointer; }
 }
 .compare-badge {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-on-accent);
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.25rem 0.75rem;
