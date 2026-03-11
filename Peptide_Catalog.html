@@ -18,9 +18,9 @@
   --color-bg-hover: #eedbb8;
   --color-text-primary: #222222;
   --color-text-secondary: #50473e;
-  --color-text-muted: #8a7e73;
+  --color-text-muted: #6d5f53;
   --color-accent: #d4ba99;
-  --color-accent-hover: #c5a882;
+  --color-accent-hover: #9a7e5e;
   --color-accent-bg: rgba(212,186,153,0.15);
   --color-on-accent: #3d2e1e;
   --color-success: #5a8a5e;
@@ -106,6 +106,9 @@ body {
   text-decoration: none;
 }
 .header-logo { height: 44px; }
+.header-logo-dark { display: none; }
+[data-theme="dark"] .header-logo-light { display: none; }
+[data-theme="dark"] .header-logo-dark { display: block; }
 .header-subtitle {
   font-family: var(--font-display);
   font-size: 1rem;
@@ -978,7 +981,7 @@ tr[data-cat] { cursor: pointer; }
 @media (max-width: 768px) {
   .header { padding: 0.75rem 1rem; }
   .header-subtitle, .header-stats { display: none; }
-  .header-logo { height: 36px; }
+  .header-logo { height: 36px !important; }
   .hero-section { padding: 1.5rem 1rem 1rem; }
   .hero-content h2 { font-size: 1.35rem; }
   .category-tabs { padding: 0 1rem 0.5rem; }
@@ -1013,7 +1016,8 @@ tr[data-cat] { cursor: pointer; }
 <div class="header">
   <div class="header-inner">
     <div class="header-brand" onclick="navigateTo('#/catalog')">
-      <img src="Images/Casa-logos/casa 1.png" alt="Casa Peptides" class="header-logo">
+      <img src="Images/Casa-logos/casa 1.png" alt="Casa Peptides" class="header-logo header-logo-light">
+      <img src="Images/Casa-logos/casa 3.png" alt="Casa Peptides" class="header-logo header-logo-dark">
       <span class="header-subtitle">Product Catalog</span>
     </div>
     <div class="header-right">
